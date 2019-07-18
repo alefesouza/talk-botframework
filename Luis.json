@@ -1,0 +1,130 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Talk TDCSP 2019",
+  "desc": "",
+  "culture": "pt-br",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "DeliveryIntent"
+    },
+    {
+      "name": "GreetingIntent"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "comida",
+      "roles": []
+    },
+    {
+      "name": "sabor",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "bom dia",
+      "intent": "GreetingIntent",
+      "entities": []
+    },
+    {
+      "text": "dois refrigerantes",
+      "intent": "DeliveryIntent",
+      "entities": [
+        {
+          "entity": "comida",
+          "startPos": 5,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "gostaria de dois pizzas de calabresa",
+      "intent": "DeliveryIntent",
+      "entities": [
+        {
+          "entity": "comida",
+          "startPos": 17,
+          "endPos": 22
+        },
+        {
+          "entity": "sabor",
+          "startPos": 27,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "me vê um especial do dia",
+      "intent": "DeliveryIntent",
+      "entities": [
+        {
+          "entity": "comida",
+          "startPos": 9,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "oi",
+      "intent": "GreetingIntent",
+      "entities": []
+    },
+    {
+      "text": "olá",
+      "intent": "GreetingIntent",
+      "entities": []
+    },
+    {
+      "text": "quero um pastel de queijo",
+      "intent": "DeliveryIntent",
+      "entities": [
+        {
+          "entity": "comida",
+          "startPos": 9,
+          "endPos": 14
+        },
+        {
+          "entity": "sabor",
+          "startPos": 19,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "quero uma pizza de mussarela",
+      "intent": "DeliveryIntent",
+      "entities": [
+        {
+          "entity": "comida",
+          "startPos": 10,
+          "endPos": 14
+        },
+        {
+          "entity": "sabor",
+          "startPos": 19,
+          "endPos": 27
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
